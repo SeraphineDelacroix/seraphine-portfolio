@@ -25,8 +25,8 @@ export function ArtworkFrame({ artwork, index }: Props) {
         className="block relative"
         aria-label={`View ${artwork.title}`}
       >
-        {/* Cascade ghosts — peek out on hover */}
-        <div className="absolute inset-0 pointer-events-none">
+        {/* Cascade ghosts — peek out on hover (now in front) */}
+        <div className="absolute inset-0 pointer-events-none z-10">
           {cascades.map((c, i) => (
             <div
               key={i}
