@@ -12,4 +12,8 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Vite-specific options such as `base` should go under the `vite` key
+  vite: {
+    base: "/seraphine-portfolio/",
+  },
 });
